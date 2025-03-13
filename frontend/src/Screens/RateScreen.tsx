@@ -5,7 +5,9 @@ import { rate3 } from '../assets/rate3';
 import { Link } from 'react-router-dom';
 import { MessageCircleMore } from 'lucide-react';
 
+import { useCurrency } from "../context/PriceContext";
 const RateScreen = () => {
+  const currency = useCurrency(); 
   return (
     <div>
       <div className="grid md:grid-cols-3 gap-2 items-center justify-center">
@@ -21,13 +23,14 @@ const RateScreen = () => {
                 <Check className="w-6 h-6 text-green-500" />
                 <h1 className="text-2xl">{item.name}</h1>
                 <h1 className="text-2xl font-extrabold text-orange-300">
+                  {currency}
                   {item.price}
                 </h1>
               </div>
             ))}
           </div>
           <div className="flex justify-around items-center mt-4">
-            <h1 className="text-2xl">650,000</h1>{' '}
+            <h1 className="text-2xl">{currency}650,000</h1>{' '}
             <Link to="https://wa.me/+2347053504996">
               <h1 className="flex bg-orange-300 py-2 px-4 rounded-full hover:bg-orange-500 ease-in-out">
                 <span className="mr-2">
@@ -51,13 +54,13 @@ const RateScreen = () => {
                 <Check className="w-6 h-6 text-green-500" />
                 <h1 className="text-2xl">{item.name}</h1>
                 <h1 className="text-2xl font-extrabold text-orange-300">
-                  {item.price}
+                {currency}{item.price}
                 </h1>
               </div>
             ))}
           </div>
           <div className="flex justify-around items-center mt-4">
-            <h1 className="text-2xl">1,900,000</h1>{' '}
+            <h1 className="text-2xl">{currency}1,900,000</h1>{' '}
             <Link to="https://wa.me/+2347053504996">
               <h1 className="flex bg-orange-300 py-2 px-4 rounded-full hover:bg-orange-500 ease-in-out">
                 <span className="mr-2">
@@ -81,13 +84,13 @@ const RateScreen = () => {
                 <Check className="w-6 h-6 text-green-500" />
                 <h1 className="text-2xl">{item.name}</h1>
                 <h1 className="text-2xl font-extrabold text-orange-300">
-                  {item.price}
+                {currency}{item.price}
                 </h1>
               </div>
             ))}
           </div>
           <div className="flex justify-around items-center mt-4">
-            <h1 className="text-2xl">2,400,000</h1>{' '}
+            <h1 className="text-2xl">{currency}2,400,000</h1>{' '}
             <Link to="https://wa.me/+2347053504996">
               <h1 className="flex bg-orange-300 py-2 px-4 rounded-full hover:bg-orange-500 ease-in-out">
                 <span className="mr-2">
