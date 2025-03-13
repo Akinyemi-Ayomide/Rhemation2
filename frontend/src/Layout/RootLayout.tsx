@@ -27,7 +27,7 @@ const RootLayout: React.FC = () => {
 
   try {
     return (
-      <div onClick={toggle}>
+      <div>
         <Navbar toggleSidebar={toggleSidebar} toggle={toggle} />
         <SideBar visibile={visibile} toggle={toggle} />
         <div className="flex min-h-screen mt-15">

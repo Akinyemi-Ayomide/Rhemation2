@@ -4,7 +4,7 @@ import { Home, Mail, Info, StarHalf } from 'lucide-react';
 const SideBar = ({visibile, toggle}) => {
   return (
     <div>
-      {visibile ? (<nav className={`w-64 bg-black fixed h-full md:hidden  text-white p-6 `} onClick={toggle}>
+      {visibile ? (<nav className={`w-full bg-black opacity-95 fixed h-full md:hidden  text-white p-6 `} onClick={toggle}>
         <ul className="space-y-3">
           <li>
             <NavLink
