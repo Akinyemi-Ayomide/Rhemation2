@@ -1,4 +1,3 @@
-
 import team6 from '../assets/team6.jpg';
 const AboutScreen = () => {
   return (
@@ -15,15 +14,18 @@ const AboutScreen = () => {
             My name is David Odunayo, a proud graduate from Kogi State
             University. I grew up in Lagos, moving from Surulere to Iyanu-Osun.
             I'm currently engaged and excited about the journey ahead. As a
-            filmmaker, cinematographer, director, and video editor, you can say
-            I'm a versatile content creator. In 2022, I founded Rhemaction
-            Studio, where I shot my first movie and wrote the script—though
-            scriptwriting isn't my primary focus. I ventured into Nollywood in
-            2019 with a clear goal: to become one of the greatest editors in the
-            industry. Rhemaction Studio, named after the word "rhema," reflects
-            my faith and commitment. Today, I run a thriving post-production
-            studio, where we handle content creation, direction, animation,
-            graphic design, and collaborate with a talented team.
+            <span className="text-orange-300 font-bold"> Filmmaker</span>,{' '}
+            <span className="text-orange-300 font-bold"> Cinematographer</span>,{' '}
+            <span className="text-orange-300 font-bold"> Director</span> and{' '}
+            <span className="text-orange-300 font-bold"> Video editor</span> you
+            can say I'm a versatile content creator. In 2022, I founded
+            Rhemaction Studio, where I shot my first movie and wrote the
+            script—though scriptwriting isn't my primary focus. I ventured into
+            Nollywood in 2019 with a clear goal: to become one of the greatest
+            editors in the industry. Rhemaction Studio, named after the word
+            "rhema," reflects my faith and commitment. Today, I run a thriving
+            post-production studio, where we handle content creation, direction,
+            animation, graphic design, and collaborate with a talented team.
           </p>
           <h1 className="text-4xl font-bold mt-5">
             <span className="text-orange-300">OUR</span> MISSION

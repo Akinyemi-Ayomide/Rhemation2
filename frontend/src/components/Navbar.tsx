@@ -33,7 +33,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggle })  => {
           }} // Infinite bounce
         >
           <Link
-            to="https://wa.me/+2347053504996"
+            to="/rate"
             target="_blank"
             rel="noopener noreferrer"
             className="text-orange-300 hover:bg-orange-300 hover:py-2 hover:px-4 hover:text-white hover:rounded-full transition-all"

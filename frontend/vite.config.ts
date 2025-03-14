@@ -7,6 +7,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   base: '/',
   server: {
-    middlewareMode: true,
+    port: 5173, // Ensure this port is available
+    host: true, // Allow access from other devices on the network
   },
 });
