@@ -21,8 +21,8 @@ const RateScreen = () => {
                 key={item.id}
               >
                 <Check className="w-6 h-6 text-green-500" />
-                <h1 className="text-2xl">{item.name}</h1>
-                <h1 className="text-2xl font-extrabold text-orange-300">
+                <h1 className="text-xl md:text-2xl">{item.name}</h1>
+                <h1 className="text-xl md:text-2xl font-extrabold text-orange-300">
                   {currency}
                   {item.price}
                 </h1>
@@ -52,15 +52,15 @@ const RateScreen = () => {
                 key={item.id}
               >
                 <Check className="w-6 h-6 text-green-500" />
-                <h1 className="text-2xl">{item.name}</h1>
-                <h1 className="text-2xl font-extrabold text-orange-300">
+                <h1 className="text-xl md:text-2xl">{item.name}</h1>
+                <h1 className="text-xl md:text-2xl font-extrabold text-orange-300">
                 {currency}{item.price}
                 </h1>
               </div>
             ))}
           </div>
           <div className="flex justify-around items-center mt-4">
-            <h1 className="text-2xl">{currency}1,900,000</h1>{' '}
+            <h1 className="text-xl md:text-2xl">{currency}1,900,000</h1>{' '}
             <Link to="https://wa.me/+2347053504996">
               <h1 className="flex bg-orange-300 py-2 px-4 rounded-full hover:bg-orange-500 ease-in-out">
                 <span className="mr-2">
@@ -82,15 +82,15 @@ const RateScreen = () => {
                 key={item.id}
               >
                 <Check className="w-6 h-6 text-green-500" />
-                <h1 className="text-2xl">{item.name}</h1>
-                <h1 className="text-2xl font-extrabold text-orange-300">
+                <h1 className="text-xl md:text-2xl">{item.name}</h1>
+                <h1 className="text-xl md:text-2xl font-extrabold text-orange-300">
                 {currency}{item.price}
                 </h1>
               </div>
             ))}
           </div>
           <div className="flex justify-around items-center mt-4">
-            <h1 className="text-2xl">{currency}2,400,000</h1>{' '}
+            <h1 className="text-xl md:text-2xl">{currency}2,400,000</h1>{' '}
             <Link to="https://wa.me/+2347053504996">
               <h1 className="flex bg-orange-300 py-2 px-4 rounded-full hover:bg-orange-500 ease-in-out">
                 <span className="mr-2">

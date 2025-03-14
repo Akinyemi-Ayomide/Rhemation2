@@ -5,6 +5,10 @@ export const data = [
     title: 'Love In Progress',
     name: 'David Odunayo',
     position: 'Editor | Colourist | Sound',
+    description:
+      "LOVE IN PROGRESS is a Romantic Nigerian Movie you don't want to miss. If you're searching for Nigerian Movies 2024 Latest Full Movies, this is for you. Watch the Latest Nollywood Movies 2024 (Full Movie). This is a free movie starring the best actors e.g Ayo Adesanya, Bobby Ekpe, Bryan Okoye, Darasimi Ogbetah. Don't miss this week's new release of the Latest Nigerian Movies.",
+    Synopsis:
+      "Iye enters an arranged relationship with Osi. However, their budding romance is threatened when she meets and befriends Osagie, Osi's cousin.",
   },
   {
     id: 2,
@@ -12,6 +16,8 @@ export const data = [
     title: 'IMPERFECT MATCH',
     name: 'David Odunayo',
     position: 'Editor | Colourist | Sound',
+    description: '',
+    Synopsis: '',
   },
   {
     id: 3,
@@ -19,6 +25,9 @@ export const data = [
     title: 'MOMENTS OF TRUTH',
     name: 'David Odunayo',
     position: 'Editor | Colourist | Sound',
+    description:
+      "In an elite high school, Malik, a popular and charismatic student, is found dead in a bathroom, sending shockwaves through the students and staff. Struggling with grief and seeking answers, Malik’s mother hires a determined private detective to uncover the truth behind her son's mysterious death. The detective’s investigation reveals a web of secrets and lies within the school. Students are questioned, and suspicions arise when a new girl is found with Malik's phone. As the detective digs deeper, a dark world of illegal drug trafficking emerges. Malik was caught in this dangerous web, and the investigation reveals that he was being supplied by a clandestine drug ring. The shocking climax uncovers that Malik’s life was taken due to unpaid debts by the leader of this drug ring who is someone everybody would least expect.",
+    Synopsis: '',
   },
   {
     id: 4,
@@ -26,6 +35,8 @@ export const data = [
     title: 'Heart Over Time',
     name: 'David Odunayo',
     position: 'Editor | Colourist | Sound',
+    description: '',
+    Synopsis: '',
   },
   {
     id: 5,
@@ -33,6 +44,8 @@ export const data = [
     title: 'No Love Lust',
     name: 'David Odunayo',
     position: 'Editor | Colourist | Sound',
+    description: '',
+    Synopsis: '',
   },
   {
     id: 5,
@@ -40,6 +53,9 @@ export const data = [
     title: 'Dear Diane',
     name: 'David Odunayo',
     position: 'Editor | Colourist | Sound',
+    description:
+      "You know the butterflies we feel when we meet someone who we believe will change our lives for the better? It's like they add color to your life, and that's what this episode feels like. I hope you meet people who bring a smile to your face from the first hello to the last goodbye.",
+    Synopsis: '',
   },
   {
     id: 6,
@@ -47,6 +63,9 @@ export const data = [
     title: 'Blind Fury',
     name: 'David Odunayo',
     position: 'Editor | Colourist | Sound',
+    description:
+      'Blind Fury is a beautiful movie that speaks to love, forgiveness, family life and therapy.',
+    Synopsis: '',
   },
   {
     id: 7,
@@ -54,6 +73,9 @@ export const data = [
     title: 'Sweet Vengeance',
     name: 'David Odunayo',
     position: 'Editor | Colourist | Sound',
+    description:
+      'This amazing masterpiece will keep you glued to your screen... very educative and captivating',
+    Synopsis: '',
   },
   {
     id: 8,
@@ -61,6 +83,10 @@ export const data = [
     title: 'Summer Rain Official Trailer',
     name: 'David Odunayo',
     position: 'Editor | Colourist | Sound',
+    description:
+      '10 years is a long time to love someone. Will Murewa Abe and Admichi Amadi make it? ',
+    Synopsis:
+      'A story of love, perseverance, hope and second chance; Summer Rain is in cinemas nationwide, starting FEBRUARY 7, don’t miss it!',
   },
   {
     id: 9,
@@ -68,6 +94,8 @@ export const data = [
     title: 'Official Trailer Of Sisters by Chance',
     name: 'David Odunayo',
     position: 'Editor | Colourist | Sound',
+    description: '',
+    Synopsis: '',
   },
   {
     id: 10,
@@ -75,6 +103,8 @@ export const data = [
     title: 'She ToMy Official Trailer',
     name: 'David Odunayo',
     position: 'Editor',
+    description: '',
+    Synopsis: '',
   },
   {
     id: 10,

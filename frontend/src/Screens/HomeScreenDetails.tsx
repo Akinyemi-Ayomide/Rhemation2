@@ -41,6 +41,18 @@ const HomeScreenDetails = () => {
           </Link>
         ))}
       </div>
+      <div className=" lg:hidden md:hidden">
+        {/* sidebar */}
+        {data.map((item) => (
+          <Link to={`/details/${item.id}`} key={item.id}>
+            <div className="gap-2 mt-2">
+              <Suspense fallback={<SideDetailsSkeleton />}>
+                <SidebarDetails item={item} />
+              </Suspense>
+            </div>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 };
