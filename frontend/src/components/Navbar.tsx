@@ -3,11 +3,10 @@ import logo1 from '../assets/logo1.png';
 import { AlignJustify } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-
 interface NavbarProps {
   toggle: () => void; // Assuming toggle is a function that doesn't take any arguments and returns void
 }
-const Navbar: React.FC<NavbarProps> = ({ toggle })  => {
+const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
   return (
     <div className="fixed top-0 left-0 w-full z-50">
       <div className="bg-black flex justify-between items-center px-3 md:px-10 py-3">
@@ -34,8 +33,6 @@ const Navbar: React.FC<NavbarProps> = ({ toggle })  => {
         >
           <Link
             to="/rate"
-            target="_blank"
-            rel="noopener noreferrer"
             className="text-orange-300 hover:bg-orange-300 hover:py-2 hover:px-4 hover:text-white hover:rounded-full transition-all"
           >
             HIRE ME
