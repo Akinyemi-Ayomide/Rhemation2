@@ -31,7 +31,7 @@ const HomeScreenDetails = () => {
 
         {/*comment*/}
 
-        <div className="mt-4">
+        {/* <div className="mt-4">
           <h2>comment</h2>
         </div>
 
@@ -53,9 +53,9 @@ const HomeScreenDetails = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
         {/*reply*/}
-        <div>
+        {/* <div>
           <div className="bg-gray-500 p-2 mt-2 rounded-lg">
             <p className="text-orange-300 font-semibold italic">
               @taiwo kehinde
@@ -72,7 +72,7 @@ const HomeScreenDetails = () => {
             <p className="text-orange-300 font-semibold italic">@segun taiwo</p>
             <p>the sound came out so nice</p>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="col-span-3 hidden lg:block md:block">
         {/* sidebar */}

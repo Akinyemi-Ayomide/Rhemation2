@@ -29,6 +29,7 @@ const HomeScreen: React.FC = () => {
               link={item.link}
               name={item.name}
               title={item.title}
+              position={item.position}
             />
           </Suspense>
         ))}

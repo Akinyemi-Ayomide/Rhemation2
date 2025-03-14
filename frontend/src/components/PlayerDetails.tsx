@@ -21,7 +21,7 @@ const PlayerDetails = ({ item }) => {
           <h1 className="mt-2 text-xl font-semibold">{item.title}</h1>
           <div className="flex justify-between items-center mt-2 font-bold">
             <p className="text-orange-300 text-sm">
-              Editor | Colourist | Sound
+              {item.position}{' '}
             </p>
             <p className="mt-2 text-sm">{item.name}</p>
           </div>
