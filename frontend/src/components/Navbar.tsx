@@ -3,16 +3,17 @@ import logo1 from '../assets/logo1.png';
 import { AlignJustify } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-const Navbar = ({ toggleSidebar, toggle }) => {
-  const handleClick = () => {
-    toggle();
-  };
+
+interface NavbarProps {
+  toggle: () => void; // Assuming toggle is a function that doesn't take any arguments and returns void
+}
+const Navbar: React.FC<NavbarProps> = ({ toggle })  => {
   return (
     <div className="fixed top-0 left-0 w-full z-50">
       <div className="bg-black flex justify-between items-center px-3 md:px-10 py-3">
         <div className="flex items-center">
           <button
-            onClick={handleClick}
+            onClick={toggle}
             aria-label="Toggle Sidebar"
             className="md:hidden"
           >
@@ -33,6 +34,8 @@ const Navbar = ({ toggleSidebar, toggle }) => {
         >
           <Link
             to="https://wa.me/+2347053504996"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-orange-300 hover:bg-orange-300 hover:py-2 hover:px-4 hover:text-white hover:rounded-full transition-all"
           >
             HIRE ME

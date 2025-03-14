@@ -1,7 +1,12 @@
-import React from 'react';
+
 import { NavLink } from 'react-router-dom';
 import { Home, Mail, Info, StarHalf } from 'lucide-react';
-const SideBar = ({visibile, toggle}) => {
+
+interface SideBarProps {
+  visibile: boolean;
+  toggle: () => void;
+}
+const SideBar: React.FC<SideBarProps> = ({visibile, toggle}) => {
   return (
     <div>
       {visibile ? (<nav className={`w-full bg-black opacity-95 z-50 fixed h-full md:hidden  text-white p-6 `} onClick={toggle}>

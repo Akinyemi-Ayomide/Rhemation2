@@ -7,7 +7,7 @@ import { useLocation } from 'react-router-dom';
 import SideBar from '../components/SideBar';
 
 const RootLayout: React.FC = () => {
-  const [isSidebarVisible, setIsSidebarVisible] = useState<boolean>(true);
+  const [isSidebarVisible] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
   const location = useLocation();
   const [visibile, setVisibile] = useState<boolean>(false);
@@ -21,14 +21,11 @@ const RootLayout: React.FC = () => {
   const toggle = (): void => {
     setVisibile(!visibile);
   };
-  const toggleSidebar = (): void => {
-    setIsSidebarVisible(!isSidebarVisible);
-  };
 
   try {
     return (
       <div>
-        <Navbar toggleSidebar={toggleSidebar} toggle={toggle} />
+        <Navbar toggle={toggle} />
         <SideBar visibile={visibile} toggle={toggle} />
         <div className="flex min-h-screen mt-15">
           {/* Conditionally render sidebar */}
@@ -38,7 +35,7 @@ const RootLayout: React.FC = () => {
                 <li>
                   <NavLink
                     to="/"
-                    className="flex block text-sm p-2 rounded-md items-center hover:border-l-4 hover:border-l-orange-300 "
+                    className="flex  text-sm p-2 rounded-md items-center hover:border-l-4 hover:border-l-orange-300 "
                   >
                     <Home className="w-5 h-5 mr-2" />
                     Home
@@ -47,7 +44,7 @@ const RootLayout: React.FC = () => {
                 <li>
                   <NavLink
                     to="/contact"
-                    className="flex block  text-sm  p-2 rounded-md items-center hover:border-l-4 hover:border-l-orange-300"
+                    className="flex  text-sm  p-2 rounded-md items-center hover:border-l-4 hover:border-l-orange-300"
                   >
                     <Mail className="w-5 h-5 mr-2" />
                     Contact
@@ -56,7 +53,7 @@ const RootLayout: React.FC = () => {
                 <li>
                   <NavLink
                     to="/about"
-                    className="flex block  text-sm  p-2 rounded-md  items-center hover:border-l-4 hover:border-l-orange-300"
+                    className="flex  text-sm  p-2 rounded-md  items-center hover:border-l-4 hover:border-l-orange-300"
                   >
                     <Info className="w-5 h-5 mr-2" />
                     About
@@ -65,7 +62,7 @@ const RootLayout: React.FC = () => {
                 <li>
                   <NavLink
                     to="/rate"
-                    className="flex block  text-sm  p-2 rounded-md  items-center hover:border-l-4 hover:border-l-orange-300"
+                    className="flex  text-sm  p-2 rounded-md  items-center hover:border-l-4 hover:border-l-orange-300"
                   >
                     <StarHalf className="w-5 h-5 mr-2" />
                     Rate card
