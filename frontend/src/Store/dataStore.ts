@@ -5,6 +5,8 @@ interface Link {
   id: number;
   link: string;
   name: string;
+  title: string;
+  position: string;
 }
 
 interface Store {

@@ -1,7 +1,21 @@
 import ReactPlayer from 'react-player';
 import { useState, useEffect } from 'react';
 import Screen from '../LazyLoad/Screen';
-const PlayerDetails = ({ item }) => {
+
+
+interface PlayerItem {
+  link: string;
+  title: string;
+  position: string;
+  name: string;
+}
+
+interface PlayerDetailsProps {
+  item: PlayerItem;
+}
+
+
+const PlayerDetails: React.FC<PlayerDetailsProps>= ({ item }) => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => setLoading(false), 2000); // Simulate loading time
