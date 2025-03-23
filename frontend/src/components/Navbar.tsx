@@ -13,7 +13,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
         <div className="bg-black flex justify-between items-center px-3 md:px-10 py-3">
           <div className="flex items-center">
             <Link to="/">
-              <img src={logo1} alt="Company Logo" className="h-10" />
+              <img src={logo1} alt="Company Logo" className=" md:h-7 h-5" />
             </Link>
           </div>
           <div className="flex">

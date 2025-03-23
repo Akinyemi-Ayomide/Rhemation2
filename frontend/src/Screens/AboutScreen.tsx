@@ -10,7 +10,7 @@ const AboutScreen = () => {
           <h1 className="text-4xl font-bold ">
             <span className="text-orange-300">WHO</span> WE ARE
           </h1>
-          <p>
+          <p className='text-xs'>
             My name is David Odunayo, a proud graduate from Kogi State
             University. I grew up in Lagos, moving from Surulere to Iyanu-Osun.
             I'm currently engaged and excited about the journey ahead. As a
@@ -30,7 +30,7 @@ const AboutScreen = () => {
           <h1 className="text-4xl font-bold mt-5">
             <span className="text-orange-300">OUR</span> MISSION
           </h1>
-          <p>
+          <p className='text-xs'>
             Our mission is to deliver cinematic excellence through top-tier
             video editing, post-production, and visual storytelling. We aim to
             be the go-to studio for filmmakers, content creators, and brands
@@ -44,7 +44,7 @@ const AboutScreen = () => {
           <h1 className="text-4xl font-bold mt-5">
             <span className="text-orange-300">OUR</span> VISION
           </h1>
-          <p>
+          <p className='text-xs'>
             To be a leading force in the film industry, revolutionizing video
             editing and post-production with cutting-edge creativity and
             technology. We strive to empower filmmakers, content creators, and

@@ -5,28 +5,34 @@ const ContactScreen = () => {
       <div className="grid mt-20 md:grid-cols-3 gap-4">
         <div className="flex items-center gap-2">
           <div className="mr-4">
-            <Map className="w-8 h-8 text-gray-500" />
+            <Map className="w-4 h-4 md:w-8 md:h-8 text-gray-500" />
           </div>
           <div>
-            <h1 className="text-4xl font-bold text-orange-300">Address</h1>
+            <h1 className="text-2xl md:text-4xl font-bold text-orange-300">
+              Address
+            </h1>
             <p>24 akoni street ijaiye lagos</p>
           </div>
         </div>
         <div className="flex items-center gap-2">
           <div className="mr-4">
-            <Phone className="w-8 h-8 text-green-500" />
+            <Phone className="w-4 h-4 md:w-8 md:h-8 text-green-500" />
           </div>
           <div>
-            <h1 className="text-4xl font-bold text-orange-300">Hotline</h1>
+            <h1 className="text-2xl md:text-4xl font-bold text-orange-300">
+              Hotline
+            </h1>
             <p>+234 705 350 4996</p>
           </div>
         </div>
         <div className="flex items-center gap-2">
           <div className="mr-4">
-            <Mail className="w-8 h-8 text-blue-500" />
+            <Mail className="w-4 h-4 md:w-8 md:h-8 text-blue-500" />
           </div>
           <div>
-            <h1 className="text-4xl font-bold text-orange-300">Email</h1>
+            <h1 className="text-2xl md:text-4xl font-bold text-orange-300">
+              Email
+            </h1>
             <p>Support@gmail.com</p>
           </div>
         </div>
@@ -53,7 +59,9 @@ const ContactScreen = () => {
             placeholder="Message"
             id=""
           ></textarea>
-          <button className='w-full bg-orange-300 py-4 hover:bg-orange-400 ease-in-out transition'>SEND MESSAGE</button>
+          <button className="w-full bg-orange-300 py-4 hover:bg-orange-400 ease-in-out transition">
+            SEND MESSAGE
+          </button>
         </div>
       </div>
     </div>

@@ -18,7 +18,7 @@ const Player: React.FC<PlayerProps> = ({ id, link, name, title, position }) => {
         <h2 className="mt-2 text-xl font-bold">{title}</h2>
         <div className="flex justify-between items-center mt-2">
           <p className="text-orange-300 text-xs">{position}</p>
-          <p className="mt-2 text-xs">{name}</p>
+          <p className=" text-xs">{name}</p>
         </div>
       </div>
     </Link>
