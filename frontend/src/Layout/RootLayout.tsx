@@ -73,7 +73,7 @@ const RootLayout: React.FC = () => {
           )}
 
           {/* Main Content */}
-          <div className="flex-1 p-6 bg-gray-950 text-white">
+          <div className="flex-1 p-6 text-white  md:max-w-[80%] justify-center mx-auto mt-10">
             <Outlet /> {/* This will render the component based on the route */}
           </div>
         </div>

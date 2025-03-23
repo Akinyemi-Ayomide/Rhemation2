@@ -14,12 +14,12 @@ const Player: React.FC<PlayerProps> = ({ id, link, name, title, position }) => {
   return (
     <Link to={`/details/${id}`}>
       <div className="rounded-lg overflow-hidden">
-        <ReactPlayer url={link} controls width="100%" className="rounded-lg" />
-        <h2 className="mt-2 text-xl font-bold">{title}</h2>
+       <div> <ReactPlayer url={link} controls width="100%" className="rounded-lg" /></div>
+       <div> <h2 className="mt-2 text-xl font-bold">{title}</h2>
         <div className="flex justify-between items-center mt-2">
           <p className="text-orange-300 text-xs">{position}</p>
           <p className=" text-xs">{name}</p>
-        </div>
+        </div></div>
       </div>
     </Link>
   );

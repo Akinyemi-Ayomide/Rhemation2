@@ -25,7 +25,7 @@ const HomeScreenDetails = () => {
   }
 
   return (
-    <div className="md:p-4 grid lg:grid-cols-12 md:grid-cols-12 gap-4">
+    <div className="md:p-4 grid lg:grid-cols-12 md:grid-cols-12 gap-4 md:max-w-[70%] justify-center mx-auto mt-10">
       <div className="col-span-9">
         <Suspense fallback={<Screen />}>
           {' '}
@@ -165,7 +165,7 @@ const HomeScreenDetails = () => {
         {data.map((item) => (
           <Link to={`/details/${item.id}`} key={item.id}>
             <div className="gap-2 mt-2">
-              <Suspense fallback={'loading...'}>
+              <Suspense fallback={<SideDetailsSkeleton />}>
                 <SidebarDetails item={item} />
               </Suspense>
             </div>
@@ -177,7 +177,7 @@ const HomeScreenDetails = () => {
         {data.map((item) => (
           <Link to={`/details/${item.id}`} key={item.id}>
             <div className="gap-2 mt-2">
-              <Suspense fallback={'Loading'}>
+              <Suspense fallback={<SideDetailsSkeleton />}>
                 <SidebarDetails item={item} />
               </Suspense>
             </div>
