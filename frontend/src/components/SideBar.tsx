@@ -21,7 +21,7 @@ const SideBar: React.FC<SideBarProps> = ({ visibile, toggle }) => {
         <nav
           className={`w-52 bg-black opacity-95 z-50 fixed h-full top-10 md:hidden text-white p-6 transition-transform ${
             visibile ? 'translate-x-0' : '-translate-x-full'
-          }`}
+          }`}  onClick={toggle}
         >
           <ul className="space-y-3">
             <li>
