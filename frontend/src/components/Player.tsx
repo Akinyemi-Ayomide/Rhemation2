@@ -12,14 +12,19 @@ interface PlayerProps {
 
 const Player: React.FC<PlayerProps> = ({ id, link, name, title, position }) => {
   return (
-    <Link to={`/details/${id}`}>
-      <div className="rounded-lg overflow-hidden">
-       <div> <ReactPlayer url={link} controls width="100%" className="rounded-lg" /></div>
-       <div> <h2 className="mt-2 text-xl font-bold">{title}</h2>
-        <div className="flex justify-between items-center mt-2">
-          <p className="text-orange-300 text-xs">{position}</p>
-          <p className=" text-xs">{name}</p>
-        </div></div>
+    <Link to={`/details/${id}`} className="block">
+      <div className="rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105">
+        {/* Video Player */}
+        <ReactPlayer url={link} controls width="100%" className="rounded-lg" />
+
+        {/* Text Content */}
+        <div className="p-4">
+          <h2 className="mt-2 text-xl font-bold">{title}</h2>
+          <div className="flex justify-between items-center mt-2 text-xs">
+            <p className="text-orange-300">{position}</p>
+            <p>{name}</p>
+          </div>
+        </div>
       </div>
     </Link>
   );
