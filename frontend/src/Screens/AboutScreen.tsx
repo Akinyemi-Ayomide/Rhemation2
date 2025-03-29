@@ -2,7 +2,7 @@ import team6 from '../assets/team6.jpg';
 const AboutScreen = () => {
   return (
     <div>
-      <div className="grid md:grid-cols-2 gap-2">
+      <div className="grid md:grid-cols-2 gap-2 p-4">
         <div>
           <img src={team6} className="rounded-md" alt="img" />
         </div>
@@ -12,7 +12,7 @@ const AboutScreen = () => {
           </h1>
           <p className='text-sm'>
             My name is David Odunayo, a proud graduate from Kogi State
-            University. I grew up in Lagos, moving from Surulere to Iyanu-Osun.
+            University. I grew up in Lagos, moving from Surulere to Iyanu-Paja.
             I'm currently engaged and excited about the journey ahead. As a
             <span className="text-orange-300 font-bold"> Filmmaker</span>,{' '}
             <span className="text-orange-300 font-bold"> Cinematographer</span>,{' '}

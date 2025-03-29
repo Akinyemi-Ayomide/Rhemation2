@@ -1,7 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import React, { Suspense } from 'react';
 import dataStore from '../Store/dataStore';
-
+import ErrorBoundary from '../components/ErrorBoundary';
 const PlayerDetails = React.lazy(() => import('../components/PlayerDetails'));
 const SidebarDetails = React.lazy(() => import('../components/SidebarDetails'));
 import Screen from '../LazyLoad/Screen';
@@ -21,6 +21,10 @@ const HomeScreenDetails = () => {
     return <div className="text-center text-red-500">Item not found</div>;
   }
 
+  const shuffleArray = <T,>(array: T[]): T[] => {
+    return [...array].sort(() => Math.random() - 0.5);
+  };
+
   const comments = [
     { user: item.user1, comment: item.comment1 },
     { user: item.user2, comment: item.comment2 },
@@ -32,12 +36,14 @@ const HomeScreenDetails = () => {
   ].filter((comment) => comment.user && comment.comment);
 
   return (
-    <div className="md:p-4 grid lg:grid-cols-12 md:grid-cols-12 gap-4 md:max-w-[70%] justify-center mx-auto mt-10">
-      {/* Main Player Section */} 
+    <div className="md:p-4 grid lg:grid-cols-12 md:grid-cols-12 gap-4 md:max-w-[80%] justify-center mx-auto ">
+      {/* Main Player Section */}
       <div className="col-span-9">
-        <Suspense fallback={<Screen />}>
-          <PlayerDetails item={item} />
-        </Suspense>
+        <ErrorBoundary>
+          <Suspense fallback={<Screen />}>
+            <PlayerDetails item={item} />
+          </Suspense>
+        </ErrorBoundary>
 
         {/* Comments Section */}
         <div className="mt-20">
@@ -63,33 +69,41 @@ const HomeScreenDetails = () => {
       </div>
 
       {/* Sidebar for Related Videos */}
-      <div className="col-span-3 hidden lg:block md:block">
-        <Suspense fallback={<SideDetailsSkeleton />}>
-          {data.map((item) => (
-            <Link
-              to={`/details/${item.id}`}
-              key={item.id}
-              className="block mt-2"
-            >
-              <SidebarDetails item={item} />
-            </Link>
-          ))}
-        </Suspense>
+      <div className="md:col-span-3 hidden lg:block md:block">
+        <ErrorBoundary>
+          <Suspense fallback={<SideDetailsSkeleton />}>
+            {shuffleArray(data)
+              .slice(0, 5)
+              .map((item) => (
+                <Link
+                  to={`/details/${item.id}`}
+                  key={item.id}
+                  className="block mt-2"
+                >
+                  <SidebarDetails item={item} />
+                </Link>
+              ))}
+          </Suspense>
+        </ErrorBoundary>
       </div>
 
       {/* Mobile Sidebar Below Comments */}
       <div className="lg:hidden md:hidden mt-10">
-        <Suspense fallback={<SideDetailsSkeleton />}>
-          {data.map((item) => (
-            <Link
-              to={`/details/${item.id}`}
-              key={item.id}
-              className="block mt-2"
-            >
-              <SidebarDetails item={item} />
-            </Link>
-          ))}
-        </Suspense>
+        <ErrorBoundary>
+          <Suspense fallback={<SideDetailsSkeleton />}>
+            {shuffleArray(data)
+              .slice(0, 5)
+              .map((item) => (
+                <Link
+                  to={`/details/${item.id}`}
+                  key={item.id}
+                  className="block mt-2"
+                >
+                  <SidebarDetails item={item} />
+                </Link>
+              ))}
+          </Suspense>
+        </ErrorBoundary>
       </div>
     </div>
   );

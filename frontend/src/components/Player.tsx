@@ -13,9 +13,9 @@ interface PlayerProps {
 const Player: React.FC<PlayerProps> = ({ id, link, name, title, position }) => {
   return (
     <Link to={`/details/${id}`} className="block">
-      <div className="rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105">
+      <div className="rounded-lg overflow-hidden shadow-lg transition-transform transform ">
         {/* Video Player */}
-        <ReactPlayer url={link} controls width="100%" className="rounded-lg" />
+        <ReactPlayer url={link} controls width="100%" className="rounded-lg -p-6" />
 
         {/* Text Content */}
         <div className="p-4">
@@ -29,5 +29,4 @@ const Player: React.FC<PlayerProps> = ({ id, link, name, title, position }) => {
     </Link>
   );
 };
-
 export default Player;

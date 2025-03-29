@@ -4,7 +4,7 @@ const SideDetailsSkeleton = () => {
   return (
     <div className="w-full h-full">
       {/* Full-screen skeleton */}
-      <Skeleton className="w-full h-40 bg-gray-900 rounded-lg" />
+      <Skeleton className="w-full h-64 bg-gray-900 rounded-lg" />
     </div>
   );
 };

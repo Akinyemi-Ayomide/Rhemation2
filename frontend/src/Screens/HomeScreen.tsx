@@ -31,7 +31,7 @@ const HomeScreen: React.FC = () => {
       <input
         type="text"
         placeholder="Search here..."
-        className="border border-orange-300 text-white w-full py-2 px-4 rounded-full -mt-20" // Added negative margin for upward movement
+        className="border border-orange-300 text-white w-full py-2 px-6 rounded-full md:mt-5 -mt-20" // Added negative margin for upward movement
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
       />

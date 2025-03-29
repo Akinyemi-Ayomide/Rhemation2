@@ -2,7 +2,7 @@ import { Map, Phone, Mail } from 'lucide-react';
 
 const ContactScreen = () => {
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 mb-10">
       <div className="grid mt-20 md:grid-cols-3 gap-6">
         <div className="flex items-center gap-4">
           <Map className="w-6 h-6 md:w-10 md:h-10 text-gray-500" />
