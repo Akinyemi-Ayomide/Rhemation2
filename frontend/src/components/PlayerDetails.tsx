@@ -32,9 +32,9 @@ const PlayerDetails: React.FC<PlayerDetailsProps>= ({ item }) => {
             width="100%"
             className="rounded-lg"
           />
-          <h1 className="mt-2 text-xl font-semibold">{item.title}</h1>
+          <h1 className="mt-2 px-2 text-xl font-semibold">{item.title}</h1>
           <div className="flex justify-between items-center mt-2 font-bold">
-            <p className="text-orange-300 text-sm">
+            <p className="text-orange-300 px-2 text-sm">
               {item.position}{' '}
             </p>
             <p className="mt-2 text-sm">{item.name}</p>

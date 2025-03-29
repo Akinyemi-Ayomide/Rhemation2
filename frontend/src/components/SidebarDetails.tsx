@@ -17,7 +17,7 @@ const SidebarDetails: React.FC<SidebarDetailsProps> = ({ item }) => {
     setTimeout(() => setLoading(false), 3000);
   }, []);
   return (
-    <div>
+    <div className='px-2 w-full'>
       {loading ? (
         <SideDetailsSkeleton />
       ) : (

@@ -36,9 +36,9 @@ const HomeScreenDetails = () => {
   ].filter((comment) => comment.user && comment.comment);
 
   return (
-    <div className="md:p-4 grid lg:grid-cols-12 md:grid-cols-12 gap-4 md:max-w-[80%] justify-center mx-auto ">
+    <div className="md:p-4 grid lg:grid-cols-12 md:grid-cols-12 grid-cols-1 gap-4 md:max-w-[80%] justify-center mx-auto ">
       {/* Main Player Section */}
-      <div className="col-span-9">
+      <div className="col-span-12 md:col-span-9">
         <ErrorBoundary>
           <Suspense fallback={<Screen />}>
             <PlayerDetails item={item} />
@@ -46,8 +46,8 @@ const HomeScreenDetails = () => {
         </ErrorBoundary>
 
         {/* Comments Section */}
-        <div className="mt-20">
-          <h2 className="text-xl font-bold">Comments</h2>
+        <div className="mt-20 px-2">
+          <h2 className="text-xl font-bold px-2">Comments</h2>
           <input
             type="text"
             placeholder="Add a comment..."
@@ -63,13 +63,13 @@ const HomeScreenDetails = () => {
               </div>
             ))
           ) : (
-            <p className="text-gray-500 mt-2">No comments yet.</p>
+            <p className="text-gray-500 mt-2 px-2">No comments yet.</p>
           )}
         </div>
       </div>
 
       {/* Sidebar for Related Videos */}
-      <div className="md:col-span-3 hidden lg:block md:block">
+      <div className="md:col-span-3  hidden lg:block md:block">
         <ErrorBoundary>
           <Suspense fallback={<SideDetailsSkeleton />}>
             {shuffleArray(data)
@@ -88,7 +88,7 @@ const HomeScreenDetails = () => {
       </div>
 
       {/* Mobile Sidebar Below Comments */}
-      <div className="lg:hidden md:hidden mt-10">
+      <div className="lg:hidden col-span-12 md:hidden mt-10">
         <ErrorBoundary>
           <Suspense fallback={<SideDetailsSkeleton />}>
             {shuffleArray(data)
