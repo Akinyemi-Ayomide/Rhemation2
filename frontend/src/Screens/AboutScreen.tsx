@@ -13,7 +13,7 @@ const AboutScreen = () => {
           <p className='text-sm'>
             My name is David Odunayo, a proud graduate from Kogi State
             University. I grew up in Lagos, moving from Surulere to Iyanu-Paja.
-            I'm currently engaged and excited about the journey ahead. As a
+            As a
             <span className="text-orange-300 font-bold"> Filmmaker</span>,{' '}
             <span className="text-orange-300 font-bold"> Cinematographer</span>,{' '}
             <span className="text-orange-300 font-bold"> Director</span> and{' '}

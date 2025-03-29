@@ -28,7 +28,7 @@ const ContactScreen = () => {
             <h2 className="text-xl md:text-3xl font-bold text-orange-300">
               Email
             </h2>
-            <p className="text-gray-600">support@gmail.com</p>
+            <p className="text-gray-600">davidodunayo10@gmail.com</p>
           </div>
         </div>
       </div>
