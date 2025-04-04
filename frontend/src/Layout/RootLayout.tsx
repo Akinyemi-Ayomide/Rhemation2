@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar';
 import { Home, Mail, Info, StarHalf } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
 import SideBar from '../components/SideBar';
+import Welcome from '../components/Welcome';
 
 const RootLayout: React.FC = () => {
   const [isSidebarVisible] = useState<boolean>(true);
@@ -25,6 +26,7 @@ const RootLayout: React.FC = () => {
   try {
     return (
       <div>
+        <Welcome />
         <Navbar toggle={toggle} />
         <SideBar visibile={visibile} toggle={toggle} />
         <div className="flex min-h-screen mt-15">

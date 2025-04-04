@@ -5,9 +5,9 @@ import { rate3 } from '../assets/rate3';
 import { Link } from 'react-router-dom';
 import { MessageCircleMore } from 'lucide-react';
 
-import { useCurrency } from "../context/PriceContext";
+import { useCurrency } from '../context/PriceContext';
 const RateScreen = () => {
-  const currency = useCurrency(); 
+  const currency = useCurrency();
   return (
     <div>
       <div className="grid md:grid-cols-3 gap-2 items-center justify-center">
@@ -54,7 +54,8 @@ const RateScreen = () => {
                 <Check className="w-6 h-6 text-green-500" />
                 <h1 className="text-xl md:text-2xl">{item.name}</h1>
                 <h1 className="text-xl md:text-2xl font-extrabold text-orange-300">
-                {currency}{item.price}
+                  {currency}
+                  {item.price}
                 </h1>
               </div>
             ))}
@@ -84,7 +85,8 @@ const RateScreen = () => {
                 <Check className="w-6 h-6 text-green-500" />
                 <h1 className="text-xl md:text-2xl">{item.name}</h1>
                 <h1 className="text-xl md:text-2xl font-extrabold text-orange-300">
-                {currency}{item.price}
+                  {currency}
+                  {item.price}
                 </h1>
               </div>
             ))}
