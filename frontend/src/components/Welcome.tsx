@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 const Welcome = () => {
   return (
     <div>
-      <div className="bg-orange-300 h-32 flex flex-col items-center justify-center">
+      <div className="bg-orange-300 md:h-32 h-20 flex flex-col items-center justify-center">
         <motion.h1
-          className="text-6xl font-bold text-center mt-10"
+          className="md:text-5xl font-bold text-center mt-13 md:mt-10 text-2xl"
           initial={{ opacity: 1 }}
           animate={{
             opacity: [1, 0, 1], // Fades in and out to simulate glitch
