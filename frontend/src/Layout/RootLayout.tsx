@@ -30,7 +30,8 @@ const RootLayout: React.FC = () => {
         <div className="flex min-h-screen mt-15">
           {/* Conditionally render sidebar */}
           {isSidebarVisible && !shouldHideSidebar && (
-            <nav className="w-52 bg-gradient-to-r from-black to-gray-900 fixed right-0 left-0 hidden md:block  text-white p-6">
+            <nav className="w-52 bg-black
+             fixed right-0 left-0 hidden md:block  text-white p-6">
               <ul className="space-y-3">
                 <li>
                   <NavLink
