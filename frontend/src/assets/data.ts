@@ -1,6 +1,56 @@
 export const data = [
   {
     id: 1,
+    link: 'https://youtu.be/IBO6AsyaP3Y?si=TUN2Co6gf_IFsXEN',
+    title: 'US (EPISODE 1)  ',
+    name: 'David Odunayo',
+    position: 'Editor | Colourist | Sound',
+    description:
+      'A single mother struggles to keep her teenage family afloat, when a teenage girl joins the family, causing a maelstrom of secrets, and hidden desires to surface and threatening to capsize their fragile existence.',
+    Synopsis:
+      '',
+    comment1: '',
+    user1: '',
+    comment2: '',
+    user2: '',
+    comment3: '',
+    user3: '',
+    comment4: '',
+    user4: '',
+    comment5: '',
+    user5: '',
+    comment6: '',
+    user6: '',
+    comment7: '',
+    user7: '',
+  },
+   {
+    id: 2,
+    link: 'https://youtu.be/RmECxl5PXh4?si=-MViwBM5EBR7bwdz',
+    title: 'NARROW',
+    name: 'David Odunayo',
+    position: 'Editor | Colourist | Sound',
+    description:
+      'Ore’s marriage to Mike begins to crumble as the selfish motives behind their union come to light, giving way to emotional abuse and manipulation forcing her to confront a painful truth. ',
+    Synopsis:
+      '',
+    comment1: '',
+    user1: '',
+    comment2: '',
+    user2: '',
+    comment3: '',
+    user3: '',
+    comment4: '',
+    user4: '',
+    comment5: '',
+    user5: '',
+    comment6: '',
+    user6: '',
+    comment7: '',
+    user7: '',
+  },
+  {
+    id: 3,
     link: 'https://www.youtube.com/watch?v=pTAheLPUWlw',
     title: 'Summer Rain Official Trailer',
     name: 'David Odunayo',
@@ -25,7 +75,7 @@ export const data = [
     user7: '',
   },
   {
-    id: 2,
+    id: 4,
     link: 'https://www.youtube.com/watch?v=56ma3dYVfM0&t=2171s',
     title: 'Beneath The Facade',
     name: 'David Odunayo',
@@ -47,7 +97,7 @@ export const data = [
   },
 
   {
-    id: 3,
+    id: 5,
     link: 'https://youtu.be/egCBNfstFbg?si=3Zq-IheS7Frf87pQ',
     title: 'The Art Of Letting Go',
     name: 'David Odunayo',
@@ -69,7 +119,7 @@ export const data = [
   },
 
   {
-    id: 4,
+    id: 6,
     link: 'https://youtu.be/CR9Ndm6W50g?si=7l-3ZNZEIJDQ8M0E',
     title: 'Heart Over Time',
     name: 'David Odunayo',
@@ -92,7 +142,7 @@ export const data = [
     user7: 'TheBrightOne',
   },
   {
-    id: 5,
+    id: 6,
     link: 'https://youtu.be/wusI_-WUjd4?si=B0sDu1rydxKVU4k4',
     title: 'No Love Lust',
     name: 'David Odunayo',
@@ -116,7 +166,7 @@ export const data = [
   },
 
   {
-    id: 6,
+    id: 7,
     link: 'https://www.youtube.com/watch?v=kHHCzyqdoNU',
     title: 'Blind Fury',
     name: 'David Odunayo',
@@ -140,7 +190,7 @@ export const data = [
     user7: '',
   },
   {
-    id: 7,
+    id: 8,
     link: 'https://www.youtube.com/watch?v=ldOE2aOof58&t=3756s',
     title: 'Sweet Vengeance',
     name: 'David Odunayo',
@@ -164,7 +214,7 @@ export const data = [
     user7: '',
   },
   {
-    id: 8,
+    id: 9,
     link: 'https://www.youtube.com/watch?v=6H0Q9QDKRcM',
     title: 'Love In Progress',
     name: 'David Odunayo',
@@ -189,7 +239,7 @@ export const data = [
     user7: 'Simply Emma',
   },
   {
-    id: 9,
+    id: 10,
     link: 'https://www.youtube.com/watch?v=NgrN9chjLwo',
     title: 'Official Trailer Of Sisters by Chance',
     name: 'David Odunayo',
@@ -212,7 +262,7 @@ export const data = [
     user7: '',
   },
   {
-    id: 10,
+    id: 11,
     link: 'https://www.youtube.com/watch?v=g23mrltsSX4',
     title: 'She ToMy Official Trailer',
     name: 'David Odunayo',
@@ -235,7 +285,7 @@ export const data = [
     user7: '',
   },
   {
-    id: 10,
+    id: 12,
     link: 'https://www.youtube.com/watch?v=2tfZEPfnMLI',
     title: 'Trailer of Feeling Butterflies',
     name: 'David Odunayo',
@@ -256,7 +306,7 @@ export const data = [
     user7: '',
   },
   {
-    id: 11,
+    id: 13,
     link: 'https://www.youtube.com/watch?v=E1hBB_hA_w8',
     title: 'Trailer of the movie The Kids And The Babysitter',
     name: 'David Odunayo',
@@ -277,7 +327,7 @@ export const data = [
     user7: '',
   },
   {
-    id: 12,
+    id: 13,
     link: 'https://www.youtube.com/watch?v=V335_JIzhEU',
     title: 'Two Heartbeats Trailer',
     name: 'David Odunayo',
@@ -298,7 +348,7 @@ export const data = [
     user7: '',
   },
   {
-    id: 13,
+    id: 14,
     link: 'https://www.youtube.com/watch?v=UYsseEOZuDc',
     title: 'Trailer of A Not So Perfect Family',
     name: 'David Odunayo',
@@ -319,7 +369,7 @@ export const data = [
     user7: '',
   },
   {
-    id: 14,
+    id: 15,
     link: 'https://www.youtube.com/watch?v=53V3tzH1a-M',
     title: 'Trailer of When Hearts Collide',
     name: 'David Odunayo',
@@ -340,7 +390,7 @@ export const data = [
     user7: '',
   },
   {
-    id: 15,
+    id: 16,
     link: 'https://www.youtube.com/watch?v=kLp6GsmL7fk',
     title: 'Trailer of Moment of Truth',
     name: 'David Odunayo',
@@ -361,7 +411,7 @@ export const data = [
     user7: '',
   },
   {
-    id: 16,
+    id: 17,
     link: 'https://youtu.be/HN-X5xCbNTw?si=V4lpJcQwgkaJWuxh',
     title: 'IMPERFECT MATCH',
     name: 'David Odunayo',
@@ -384,7 +434,7 @@ export const data = [
     user7: 'EveTheExplorer',
   },
   {
-    id: 17,
+    id: 18,
     link: 'https://www.youtube.com/watch?v=D-tudHqBPH0&t=4497s',
     title: 'Brotherly Love',
     name: 'David Odunayo',
@@ -405,7 +455,7 @@ export const data = [
     user7: '',
   },
   {
-    id: 18,
+    id: 19,
     link: 'https://www.youtube.com/watch?v=GoWZfsdd1yw&t=5090s',
     title: 'Th Beauty of Things',
     name: 'David Odunayo',
@@ -426,7 +476,7 @@ export const data = [
     user7: '',
   },
   {
-    id: 19,
+    id: 20,
     link: 'https://www.youtube.com/watch?v=yLGlclnGJBo',
     title: 'MOMENTS OF TRUTH',
     name: 'David Odunayo',
@@ -450,7 +500,7 @@ export const data = [
     user7: 'TheRealGoat',
   },
   {
-    id: 20,
+    id: 21,
     link: 'https://www.youtube.com/watch?v=HN-X5xCbNTw&t=631s',
     title: 'Imperfect Match 2',
     name: 'David Odunayo',
@@ -471,7 +521,7 @@ export const data = [
     user7: '',
   },
   {
-    id: 21,
+    id: 22,
     link: 'https://youtu.be/1K9vYmaA2_k?si=hEA0JcUgHAv5if2n',
     title: 'In My Shoes',
     name: 'David Odunayo',
@@ -492,7 +542,7 @@ export const data = [
     user7: '',
   },
   {
-    id: 22,
+    id: 23,
     link: 'https://www.youtube.com/watch?v=2RMGhCWuF-I',
     title: 'Imperfect Match',
     name: 'David Odunayo',
@@ -513,7 +563,7 @@ export const data = [
     user7: '',
   },
   {
-    id: 23,
+    id: 24,
     link: 'https://www.youtube.com/watch?v=B2cRLdBSSjI',
     title: 'Built To Last',
     name: 'David Odunayo',
@@ -534,7 +584,7 @@ export const data = [
     user7: '',
   },
   {
-    id: 24,
+    id: 25,
     link: 'https://www.youtube.com/watch?v=8b1nqHhOwHU&t=3415s',
     title: 'A Christmas Gift',
     name: 'David Odunayo',
@@ -555,7 +605,7 @@ export const data = [
     user7: '',
   },
   {
-    id: 25,
+    id: 26,
     link: 'https://youtu.be/B5z2MfBsCjw?si=z7uSpfuX26vAk_-E',
     title: 'Keep It Moving',
     name: 'David Odunayo',
@@ -576,7 +626,7 @@ export const data = [
     user7: '',
   },
   {
-    id: 26,
+    id: 27,
     link: 'https://youtu.be/Y5BvGfEv4wc?si=cNZXvYf5-drpkKEN',
     title: 'Mo Fe Were Part 1',
     name: 'David Odunayo',
@@ -597,7 +647,7 @@ export const data = [
     user7: '',
   },
   {
-    id: 27,
+    id: 28,
     link: 'https://www.youtube.com/results?search_query=illusion+of+us+uchenna+mbunabo+tv',
     title: 'Illusions of Us',
     name: 'David Odunayo',
@@ -618,7 +668,7 @@ export const data = [
     user7: '',
   },
   {
-    id: 28,
+    id: 29,
     link: 'https://www.youtube.com/watch?v=KsFceULYrWY&list=PLcioA4KXOStvKsrb3vBZYyYf4QSHUQLX6',
     title: 'Omo Momizs Full Series',
     name: 'David Odunayo',
@@ -639,7 +689,7 @@ export const data = [
     user7: '',
   },
   {
-    id: 29,
+    id: 30,
     link: 'https://www.youtube.com/watch?v=Vq2ZfYeHOik',
     title: 'Nu season!! Picture Perfect Series Trailer',
     name: 'David Odunayo',
@@ -660,7 +710,7 @@ export const data = [
     user7: '',
   },
   {
-    id: 30,
+    id: 31,
     link: 'https://www.youtube.com/watch?v=hHYI-rOW9EQ&t=2811s',
     title: 'Lost In Lagos',
     name: 'David Odunayo',
@@ -681,7 +731,7 @@ export const data = [
     user7: '',
   },
   {
-    id: 31,
+    id: 32,
     link: 'https://www.youtube.com/watch?v=t3MnaJJgZuE&t=4056s',
     title: 'Strange Affections',
     name: 'David Odunayo',
@@ -702,7 +752,7 @@ export const data = [
     user7: '',
   },
   {
-    id: 32,
+    id: 33,
     link: 'https://www.youtube.com/watch?v=WgxJKD2iV8E',
     title: '30 FOR 30',
     name: 'David Odunayo',
@@ -723,7 +773,7 @@ export const data = [
     user7: '',
   },
   {
-    id: 33,
+    id: 34,
     link: 'https://www.youtube.com/watch?v=WJpOD8Q0fN8&t=4164s',
     title: 'Dare To Love',
     name: 'David Odunayo',
@@ -744,7 +794,7 @@ export const data = [
     user7: '',
   },
   {
-    id: 34,
+    id: 35,
     link: 'https://www.youtube.com/watch?v=YFbNAoEUHbI',
     title: 'Healed Hearts',
     name: 'David Odunayo',
@@ -765,7 +815,7 @@ export const data = [
     user7: '',
   },
   {
-    id: 35,
+    id: 36,
     link: 'https://youtu.be/JzC2bYCV6Jw?si=AygIYmONfu7IlF-l',
     title: 'Dear Diane',
     name: 'David Odunayo',
