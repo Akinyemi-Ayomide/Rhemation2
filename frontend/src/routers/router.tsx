@@ -20,9 +20,6 @@ const router = createBrowserRouter(
       ],
     },
   ],
-  {
-    basename: '/Rhemation2/',
-  }
 );
 
 export default router;
